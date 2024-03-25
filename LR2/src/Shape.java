@@ -13,7 +13,7 @@ abstract class Shape {
         this.color = color;
     }
 
-    String getColor() {
+    public String getColor() {
         return this.color;
     }
 

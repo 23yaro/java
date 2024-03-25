@@ -1,14 +1,5 @@
 public class Rectangle extends Shape {
     private Double x;
-
-    public Double getY() {
-        return y;
-    }
-
-    public void setY(Double y) {
-        this.y = y;
-    }
-
     private Double y;
     private Double h;
 
@@ -25,6 +16,14 @@ public class Rectangle extends Shape {
 
     public void setX(Double x) {
         this.x = x;
+    }
+
+    public Double getY() {
+        return y;
+    }
+
+    public void setY(Double y) {
+        this.y = y;
     }
 
     public Double getH() {
