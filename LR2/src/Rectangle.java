@@ -1,5 +1,14 @@
 public class Rectangle extends Shape {
     private Double x;
+
+    public Double getY() {
+        return y;
+    }
+
+    public void setY(Double y) {
+        this.y = y;
+    }
+
     private Double y;
     private Double h;
 
@@ -8,6 +17,33 @@ public class Rectangle extends Shape {
         this.x = x;
         this.y = y;
         this.h = h;
+    }
+
+    public Double getX() {
+        return x;
+    }
+
+    public void setX(Double x) {
+        this.x = x;
+    }
+
+    public Double getH() {
+        return h;
+    }
+
+    public void setH(Double h) {
+        this.h = h;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) {
+            return true;
+        }
+        if (!(o instanceof Rectangle o_compare)) {
+            return false;
+        }
+        return Double.compare(x, o_compare.x) == 0 && Double.compare(y, o_compare.y) == 0 && Double.compare(h, o_compare.h) == 0;
     }
 
     @Override

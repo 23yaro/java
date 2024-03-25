@@ -1,4 +1,5 @@
 abstract class Shape {
+
     private Integer point_draw;
     private String color;
 
@@ -6,29 +7,6 @@ abstract class Shape {
         this.point_draw = point_draw;
         this.color = "black";
     }
-
-//    @Override
-//    public boolean equals(object o) {
-//
-//        // If the object is compared with itself then return true
-//        if (o == this) {
-//            return true;
-//        }
-//
-//        /* Check if o is an instance of Complex or not
-//          "null instanceof [type]" also returns false */
-//        if (!(o instanceof Complex)) {
-//            return false;
-//        }
-//
-//        // typecast o to Complex so that we can compare data members
-//        Complex c = (Complex) o;
-//
-//        // Compare the data members and return accordingly
-//        return Double.compare(re, c.re) == 0
-//                && Double.compare(im, c.im) == 0;
-//    }
-
 
 
     public void setColor(String color) {
@@ -39,6 +17,15 @@ abstract class Shape {
         return this.color;
     }
 
+    public void setPoint_draw(Integer point_draw) {
+        this.point_draw = point_draw;
+    }
+
+    public Integer getPoint_draw() {
+        return point_draw;
+    }
+
+
     void move(Integer x) {
         this.point_draw += x;
     }
@@ -46,7 +33,6 @@ abstract class Shape {
     void fill(String color) {
         this.color = color;
     }
-
 
 
     abstract Double square();
