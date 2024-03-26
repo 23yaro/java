@@ -1,40 +1,8 @@
-abstract class Shape {
+public interface Shape {
+    abstract void move(Integer x);
 
-    private Integer point_draw;
-    private String color;
-
-    public Shape(Integer point_draw) {
-        this.point_draw = point_draw;
-        this.color = "black";
-    }
-
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getColor() {
-        return this.color;
-    }
-
-    public void setPoint_draw(Integer point_draw) {
-        this.point_draw = point_draw;
-    }
-
-    public Integer getPoint_draw() {
-        return point_draw;
-    }
-
-
-    void move(Integer x) {
-        this.point_draw += x;
-    }
-
-    void fill(String color) {
-        this.color = color;
-    }
-
-
+    abstract void fill(String color);
+    abstract String getColor();
     abstract Double square();
 
     abstract Double perimeter();

@@ -1,13 +1,16 @@
-public class Triangle extends Shape {
+public class Triangle implements Shape {
+    private Double initial_coordinate;
+    private String color;
     private Double x;
     private Double y;
     private Double h;
 
-    public Triangle(Integer point_draw, Double x, Double y, Double h) {
-        super(point_draw);
+    public Triangle(Double x, Double y, Double h) {
         this.x = x;
         this.y = y;
         this.h = h;
+        initial_coordinate = 0.0;
+        color = "black";
     }
 
     public Double getX() {
@@ -46,12 +49,27 @@ public class Triangle extends Shape {
     }
 
     @Override
-    Double square() {
+    public String getColor() {
+        return this.color;
+    }
+
+    @Override
+    public void move(Integer x) {
+        this.initial_coordinate += x;
+    }
+
+    @Override
+    public void fill(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public Double square() {
         return Math.abs(x - y) * h / 2;
     }
 
     @Override
-    Double perimeter() {
+    public Double perimeter() {
         return Math.abs(x - y) * 3;
     }
 }

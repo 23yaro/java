@@ -1,13 +1,14 @@
-public class Circle extends Shape {
-
-
+public class Circle implements Shape {
+    private Double initial_coordinate;
+    private String color;
     private Integer r;
     private final double p = 3.14;
 
 
     public Circle(Integer point_draw, Integer r) {
-        super(point_draw);
         this.r = r;
+        initial_coordinate = 0.0;
+        color = "black";
     }
 
 
@@ -31,12 +32,27 @@ public class Circle extends Shape {
     }
 
     @Override
-    Double square() {
+    public void move(Integer x) {
+        this.initial_coordinate += x;
+    }
+
+    @Override
+    public void fill(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String  getColor() {
+        return this.color;
+    }
+
+    @Override
+    public Double square() {
         return Math.pow(this.p * this.r, 2);
     }
 
     @Override
-    Double perimeter() {
+    public Double perimeter() {
         return 2 * this.p * this.r;
     }
 }

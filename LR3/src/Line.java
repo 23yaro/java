@@ -1,11 +1,14 @@
-class Line extends Shape {
+public class Line implements Shape {
+    private Double initial_coordinate;
+    private String color;
     private Double x;
     private Double y;
 
-    public Line(Integer point_draw, Double x, Double y) {
-        super(point_draw);
+    public Line(Double x, Double y) {
         this.x = x;
         this.y = y;
+        initial_coordinate = 0.0;
+        color = "black";
     }
 
     public Double getX() {
@@ -36,14 +39,28 @@ class Line extends Shape {
     }
 
     @Override
-    Double square() {
+    public void move(Integer x) {
+        this.initial_coordinate += x;
+    }
+
+    @Override
+    public void fill(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public Double square() {
         return 0.0;
     }
 
     @Override
-    Double perimeter() {
+    public Double perimeter() {
         return Math.abs(this.x - this.y);
     }
 
+    @Override
+    public String getColor() {
+        return this.color;
+    }
 
 }
