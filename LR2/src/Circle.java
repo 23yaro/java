@@ -39,4 +39,9 @@ public class Circle extends Shape {
     Double perimeter() {
         return 2 * this.p * this.r;
     }
+
+    @Override
+    public String toString() {
+        return " Площадь " + square() + " Периметр " + perimeter();
+    }
 }

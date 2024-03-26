@@ -35,7 +35,7 @@ public class main {
 
     public static void print_all(Shape[] shapes) {
         for (int i = 0; i < shapes.length; i++){
-            System.out.println("Square: " + shapes[i].square() + " Perimeter: " + shapes[i].perimeter() + " Color: " + shapes[i].getColor());
+            System.out.println(shapes[i].toString() + " Color: " + shapes[i].getColor());
         }
     }
 }

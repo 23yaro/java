@@ -45,5 +45,9 @@ class Line extends Shape {
         return Math.abs(this.x - this.y);
     }
 
+    @Override
+    public String toString() {
+        return " Площадь " + square() + " Периметр " + perimeter();
+    }
 
 }

@@ -54,4 +54,9 @@ public class Triangle extends Shape {
     Double perimeter() {
         return Math.abs(x - y) * 3;
     }
+
+    @Override
+    public String toString() {
+        return " Площадь " + square() + " Периметр " + perimeter();
+    }
 }

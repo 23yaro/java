@@ -54,4 +54,9 @@ public class Rectangle extends Shape {
     Double perimeter() {
         return Math.abs(this.x - this.y) * 2 + h * 2;
     }
+
+    @Override
+    public String toString() {
+        return " Площадь " + square() + " Периметр " + perimeter();
+    }
 }
