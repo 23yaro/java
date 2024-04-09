@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba10b71-ecdf-4469-82b4-77673b41d3af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Picture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LR4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LR4/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="dba10b71-ecdf-4469-82b4-77673b41d3af" name="Changes" comment="5.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Picture.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -67,10 +66,24 @@
       <workItem from="1712609628545" duration="9000" />
       <workItem from="1712609903537" duration="280000" />
       <workItem from="1712652652971" duration="751000" />
+      <workItem from="1712653673066" duration="2519000" />
     </task>
+    <task id="LOCAL-00001" summary="5.1">
+      <option name="closed" value="true" />
+      <created>1712653753276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712653753276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="5.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.1" />
   </component>
 </project>
