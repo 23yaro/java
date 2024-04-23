@@ -22,6 +22,18 @@ public class Picture {
         return theme;
     }
 
+    public int getR() {
+        return r;
+    }
+
+    public int getG() {
+        return g;
+    }
+
+    public int getB() {
+        return b;
+    }
+
     @Override
     public String toString() {
         return name + " - " + theme + " (" + r + ", " + g + ", " + b + ")";
